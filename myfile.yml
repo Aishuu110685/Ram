@@ -1,5 +1,5 @@
 ---
-- name: i want to install create file
+- name: i want to create file
   file:
         path: /home/ubuntu/myvertex.txt
         state: touch
