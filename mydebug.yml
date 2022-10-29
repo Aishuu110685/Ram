@@ -1,0 +1,28 @@
+---
+- hosts: 172.31.20.127
+  become: yes
+  tasks:
+     - name: i want to run linux command
+       command: hostname -f
+       register: myresult
+
+
+     - name: i want display linux command output
+       debug:
+           msg:"{{myresult}}"  
+
+
+     - name: i want to install wget
+       apt:
+           name: wget
+           state: present
+       when: myresult.strderr==""
+
+
+     - name: i want to install tree
+       apt:
+           name: tree
+           state: present
+       when: myresult.strderr!=""        
+
+
