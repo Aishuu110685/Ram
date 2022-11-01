@@ -29,7 +29,7 @@
 #step 3.4: extract the archive file to /opt/tomcat    
 - name: extract the archive file to /opt/tomcat
   command:
-    cmd: xzvf /home/ubuntu/tmperrr -C /opt/tomcat --strip-components=1
+    cmd:  sudo tar xzvf /home/ubuntu/tmperrr -C /opt/tomcat --strip-components=1
     creates: /opt/tomcat/LICENSE
 
 
