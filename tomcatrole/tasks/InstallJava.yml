@@ -1,0 +1,16 @@
+---
+
+# step 1.1: apt-get update
+- name: update packages
+  apt:
+    update_cache: yes
+
+
+# step 1.2: install the Java Development Kit package with apt
+- name: install java jdk  
+  apt:
+    name: default-jdk
+    state: present
+ 
+
+

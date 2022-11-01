@@ -1,2 +1,6 @@
 ---
-# tasks file for tomcatrole
+# tasks file for tomcatrole 
+- include_tasks: InstallJava.yml
+- include_tasks: CreateTomcatUser.yml
+- include_tasks: InstallTomcat.yml
+- include_tasks: UpdatePermissions.yml
