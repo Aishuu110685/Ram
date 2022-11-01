@@ -21,16 +21,16 @@
 
 
 # step 3.4: extract the archive file to /opt/tomcat    [only one time ]
-#- name: extract the archive file to /opt/tomcat
-#  unarchive:
-#     src: /home/ubuntu/tmp
-#     dest: /opt/tomcat
+- name: extract the archive file to /opt/tomcat
+  unarchive:
+     src: /home/ubuntu/laxmi
+     dest: /opt/tomcat
 
 #step 3.4: extract the archive file to /opt/tomcat    
-- name: extract the archive file to /opt/tomcat
-  command:
-    cmd: xzvf /home/ubuntu/laxmi -C /opt/tomcat --strip-components=1
-    creates: /opt/tomcat/LICENSE
+#- name: extract the archive file to /opt/tomcat
+ # command:
+  #  cmd: xzvf /home/ubuntu/laxmi -C /opt/tomcat --strip-components=1
+   # creates: /opt/tomcat/LICENSE
 
 
 
