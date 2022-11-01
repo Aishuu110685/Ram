@@ -40,9 +40,9 @@
 
 # step 4.5.2 : Make the tomcat user the owner of the work
 - name: Make the tomcat user the owner of the work
-  file:
+  file: 
     path: /opt/tomcat/work
-    state: directory
+    state: directory 
     recurse: yes
     owner: tomcat
     group: tomcat    
