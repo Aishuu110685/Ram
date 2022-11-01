@@ -1,10 +1,10 @@
 ---
 
  #step 3.1: /tmp directory on your server
-#- name: i want to create directory tmp
- # file:
-  #     path: /home/ubuntu/tmper
-   #    state: directory
+- name: i want to create directory tmp
+  file:
+       path: /home/ubuntu/tmper
+       state: directory
 
 # step 3.2: download tomcat tar file in /tmp directory
 - name: download tomcat tar file
