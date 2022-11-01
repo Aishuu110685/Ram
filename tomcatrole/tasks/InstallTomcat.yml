@@ -1,16 +1,16 @@
 ---
 
  #step 3.1: /tmp directory on your server
-- name: i want to create directory tmp
-  file:
-       path: /home/ubuntu/tmper
-       state: directory
+#- name: i want to create directory tmp
+ # file:
+  #     path: /home/ubuntu/tmper
+   #    state: directory
 
 # step 3.2: download tomcat tar file in /tmp directory
 - name: download tomcat tar file
   get_url:
     url: https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.30/bin/apache-tomcat-9.0.30.tar.gz
-    dest: /home/ubuntu/temper
+    dest: /home/ubuntu/laxmi
     force_basic_auth: yes
 
 # step 3.3: /opt/tomcat directory on your server
@@ -29,7 +29,7 @@
 #step 3.4: extract the archive file to /opt/tomcat    
 - name: extract the archive file to /opt/tomcat
   command:
-    cmd: xzvf /home/ubuntu/temper -C /opt/tomcat --strip-components=1
+    cmd: xzvf /home/ubuntu/laxmi -C /opt/tomcat --strip-components=1
     creates: /opt/tomcat/LICENSE
 
 
