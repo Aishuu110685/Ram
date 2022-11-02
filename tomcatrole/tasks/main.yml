@@ -7,4 +7,6 @@
 - include_tasks: CreatesystemdServiceFile.yml                    
 - include_tasks: servicestart.yml
 - include_tasks: TomcatWebManagementInterface.yml
+- include_tasks: deployjava.yml
 - include_tasks: tomcatrestart.yml
+

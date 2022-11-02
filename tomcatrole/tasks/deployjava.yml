@@ -1,0 +1,9 @@
+---
+- name: i want to deploy java application
+  get_url:
+    url: https://mytomcataplibuckate.s3.us-west-2.amazonaws.com/mahaLogin-5.0.war
+    dest: /opt/tomcat/webapps//mahaLogin-5.0.war
+    force_basic_auth: yes
+
+
+  
