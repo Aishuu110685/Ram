@@ -3,6 +3,8 @@
 172.31.5.240
 172.31.20.127
 
+[applicationserver]
+172.31.25.148
 
 
 [DBserver]
