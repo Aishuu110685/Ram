@@ -1,0 +1,6 @@
+---
+# step 7.4 : tomcat service restart 
+- name: restart the Tomcat service
+  systemd:
+    name: tomcat
+    state: restarted

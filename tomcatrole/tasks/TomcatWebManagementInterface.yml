@@ -1,0 +1,22 @@
+---
+
+# step 7.1 :  editing the tomcat-users
+- name: editing the tomcat-users
+  template:
+        src: template/tomcatuser.j2
+        dest: /opt/tomcat/conf/tomcat-users.xml
+
+
+# step 7.2 :  change manage context file 
+- name: change manage context file 
+  template:
+        src: template/managerapp.j2
+        dest: /opt/tomcat/webapps/manager/META-INF/context.xml
+
+
+
+# step 7.3 : change host manage context file 
+- name: change host manage context file 
+  template:
+        src: template/hostmanagerapp.j2
+        dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml                

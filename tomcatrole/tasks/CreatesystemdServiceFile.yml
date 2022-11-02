@@ -1,0 +1,7 @@
+---
+
+# step 5.4 :  Open a file called tomcat.service
+- name: i want to change template
+  template:
+        src: template/tomcatservice.j2
+        dest: /etc/systemd/system/tomcat.service

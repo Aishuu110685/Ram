@@ -1,0 +1,9 @@
+---
+# step 5.5,6 : start tomcat, daemon-reload , enable tomcat
+- name: start tomcat service 
+  systemd:
+    state: started
+    daemon_reload: yes
+    name: tomcat
+    enabled: true
+
